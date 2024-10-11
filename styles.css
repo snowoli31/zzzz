@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    color: #000000;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 3rem; /* Reducir tamaño de la fuente */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+    color: #000000;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #00bcd4;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #008c9e;
+}
+
+/* Capa de filtro */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.pinimg.com/originals/5c/12/a5/5c12a597eab66f74d73ac7ec7c059e18.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    z-index: 1;
+}
